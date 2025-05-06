@@ -1,0 +1,79 @@
+{% load i18n %}
+{% load static %}
+<header id="header">
+    <div class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="logo">
+                        <figure>
+                            <a href="{% url 'home' %}" class="light-logo">
+                                <img src="{% static 'extra-images/main-logo.png' %}" alt="{% trans 'Main Logo' %}">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="main-nav">
+                        <nav id="site-navigation" class="main-navigation">
+                            <ul>
+                                <li>
+                                    <a href="#">{% trans "Demos" %}</a>
+                                    <ul>
+                                        <li><a href="/food-bakery/">{% trans "Food Bakery" %}</a></li>
+                                        <li><a href="/mexican-restaurant/">{% trans "Mexican Restaurant" %}</a></li>
+                                        <li><a href="/food-stop/">{% trans "Food Stop" %}</a></li>
+                                        <li><a href="/rtl-demo/">{% trans "RTL Demo" %}</a></li>
+                                        <li><a href="/food-court/">{% trans "Food Court" %}</a></li>
+                                        <li><a href="/single-restaurant/">{% trans "Single Restaurant Demo" %}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/restaurants/">{% trans "Restaurants" %}</a></li>
+                                <li>
+                                    <a href="#">{% trans "Pages" %}</a>
+                                    <ul>
+                                        <li><a href="/price-plans/">{% trans "Price Plans" %}</a></li>
+                                        <li><a href="/how-it-works/">{% trans "How it Works" %}</a></li>
+                                        <li><a href="/faq/">{% trans "FAQ’s" %}</a></li>
+                                        <li><a href="/404/">{% trans "404" %}</a></li>
+                                        <li><a href="/search-result/">{% trans "Search Result" %}</a></li>
+                                        <li><a href="/contact-us/">{% trans "Contact" %}</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">{% trans "Blogs" %}</a>
+                                    <ul>
+                                        <li><a href="/blog-large/">{% trans "Blog Large" %}</a></li>
+                                        <li><a href="/blog-medium/">{% trans "Blog Medium" %}</a></li>
+                                        <li><a href="/blog-masonry/">{% trans "Blog Masonry" %}</a></li>
+                                        <li><a href="/blog-detail/">{% trans "Blog Detail Page" %}</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main-location">
+                        <ul>
+                            <li class="location-has-children choose-location">
+                                <form action="#">
+                                    <input type="text" name="location" placeholder="{% trans 'Enter your delivery location' %}" autocomplete="off">
+                                    <span id="foodbakery_radius_location_open" class="foodbakery-radius-location">
+                                        <i class="icon-target5"></i>
+                                    </span>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="login-option">
+                        <a class="cs-color cs-popup-joinus-btn login-popup" data-target="#sign-in" data-toggle="modal" href="#user-register">
+                            {% trans "Login / Register" %}
+                        </a>
+                        <a class="get-start-btn" href="/register-restaurant/">
+                            {% trans "Register Restaurant" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
