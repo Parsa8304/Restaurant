@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     
     'restaurant_app',
     'accounts',
+    'vendor',
+    
 ]
 
 
