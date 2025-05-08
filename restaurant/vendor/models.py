@@ -3,7 +3,7 @@ from accounts.models import User, UserProfile
 
 
 class Vendor(models.Model):
-       user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='vendor')
+       user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='vendor_profile', null=False)
        user_profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='vendor_profile')
        vendor_name = models.CharField(max_length=255, unique=True)
        vendor_liecense = models.FileField(upload_to='vendor/liecense', unique=True)
