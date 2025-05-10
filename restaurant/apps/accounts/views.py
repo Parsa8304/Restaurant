@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserForm
-from vendor.forms import VendorForm
+from apps.vendor.forms import VendorForm
 from .models import User, UserProfile
 from django.db import IntegrityError
 

@@ -1,5 +1,5 @@
 from django.db import models
-from accounts.models import User, UserProfile
+from apps.accounts.models import User, UserProfile
 
 
 class Vendor(models.Model):
